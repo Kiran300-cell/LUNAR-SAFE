@@ -1,0 +1,7 @@
+mode,seed,best_epoch,best_val_elevation_l1,checkpoint_selection_metric
+A,42,28,0.014476243865986666,validation_elevation_L1
+A,143,30,0.013827185754974684,validation_elevation_L1
+A,244,29,0.01438935961574316,validation_elevation_L1
+B,42,28,0.014457065587242444,validation_elevation_L1
+B,143,30,0.01436157335837682,validation_elevation_L1
+B,244,30,0.014309959535797437,validation_elevation_L1

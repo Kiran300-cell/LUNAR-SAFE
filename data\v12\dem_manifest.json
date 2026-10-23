@@ -1,0 +1,19 @@
+{
+  "path": "/content/Lunar_LROnac_Haworth_sfs-dem_1m_v3.tif",
+  "sha256": "023372083f1675ec12bc206e14b2c3af3bf636bdcd33120d592fe00ede23cc56",
+  "shape": [
+    12060,
+    11660
+  ],
+  "crs": "PROJCS[\"PolarStereographic Moon\",GEOGCS[\"D_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon_polarRadius\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+  "pixel_x": 1.0,
+  "pixel_y": 1.0,
+  "band_units": [
+    null
+  ],
+  "nodata": "-3.4028226550889045e+38",
+  "tags": {
+    "AREA_OR_POINT": "Area"
+  },
+  "vertical_units_confirmed_metres": false
+}

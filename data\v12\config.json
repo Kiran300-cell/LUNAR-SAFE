@@ -1,0 +1,32 @@
+{
+  "project": "LUNAR-SAFE V12",
+  "checkpoint_selection_metric": "validation_elevation_L1_for_both_CNN_objectives",
+  "validation_logging": "validation_elevation_L1_and_validation_objective_reported_separately",
+  "source_url": "https://planetarymaps.usgs.gov/mosaic/Lunar_Photoclinometry/Haworth-SfS/Lunar_LROnac_Haworth_sfs-dem_1m_v3.tif",
+  "scale_factor": 5,
+  "hr_patch_size": 100,
+  "lr_patch_size": 20,
+  "patches_per_split": 600,
+  "seeds": [
+    42,
+    143,
+    244
+  ],
+  "batch_size": 16,
+  "max_epochs": 30,
+  "early_stopping_patience": 6,
+  "learning_rate": 0.0001,
+  "gradient_loss_weight": 0.1,
+  "slope_thresholds_deg": [
+    5.0,
+    10.0,
+    15.0
+  ],
+  "edge_trim_pixels": 2,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261023,
+  "split_seed": 42,
+  "device": "cuda",
+  "vertical_units_confirmed_metres": false,
+  "scope": "single Haworth DEM; synthetic 5x degradation; exploratory hazard labels"
+}

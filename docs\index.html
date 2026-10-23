@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUNAR-SAFE | Lunar Terrain Analysis & Hazard Screening</title>
+  <meta name="description" content="Explore the LUNAR-SAFE research dashboard for lunar terrain reconstruction, slope and roughness screening, CNN evaluation, and transparent scientific validation in the Haworth region.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://kiran300-cell.github.io/LUNAR-SAFE/">
+  <meta property="og:url" content="https://kiran300-cell.github.io/LUNAR-SAFE/">
+  <meta name="theme-color" content="#08121f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LUNAR-SAFE | Lunar Terrain Analysis">
+  <meta property="og:description" content="A research dashboard for lunar DEM reconstruction, interactive terrain screening, and reproducible CNN evaluation.">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"LUNAR-SAFE","applicationCategory":"Science","operatingSystem":"Web","description":"Research dashboard for lunar terrain reconstruction, interactive slope and roughness screening, and validation of CNN-based DEM super-resolution."}
+  </script>
+  <style>
+    :root{color-scheme:dark;--bg:#08121f;--panel:#101f30;--text:#edf5ff;--muted:#a9bacd;--cyan:#42d9f5;--gold:#f2b866}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 10%,#17324a 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.65 system-ui,Segoe UI,sans-serif}
+    main{max-width:960px;margin:0 auto;padding:72px 24px 48px}header{max-width:760px} .eyebrow{color:var(--cyan);letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:700}h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.03;margin:.4em 0}h2{margin-top:2.5rem}p{color:var(--muted)}.cta{display:inline-block;background:var(--cyan);color:#06111b;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:750;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:28px 0}.card{background:var(--panel);border:1px solid #29415a;border-radius:12px;padding:20px}.card h2{font-size:1.1rem;margin:0 0 8px}.note{border-left:3px solid var(--gold);padding:12px 16px;background:#172536}footer{margin-top:56px;border-top:1px solid #29415a;padding-top:20px;color:var(--muted);font-size:.9rem}a{color:var(--cyan)}
+  </style>
+</head>
+<body><main>
+  <header>
+    <div class="eyebrow">Lunar terrain intelligence · Haworth region</div>
+    <h1>See the terrain.<br>Screen it dynamically.</h1>
+    <p>LUNAR-SAFE is a research dashboard for lunar digital elevation models. Explore the V12 evaluation, compare reconstruction methods, and interactively screen projected DEMs using slope and local roughness thresholds.</p>
+    <a class="cta" href="https://github.com/Kiran300-cell/LUNAR-SAFE">View project on GitHub</a>
+  </header>
+  <section class="grid" aria-label="Dashboard capabilities">
+    <article class="card"><h2>Interactive terrain screening</h2><p>Adjust slope and roughness limits and see pass-proxy, review, and high-priority map classes update with the uploaded DEM.</p></article>
+    <article class="card"><h2>Reproducible model evaluation</h2><p>Inspect held-out patch results for bicubic, bilinear, CNN-A, and CNN-B, including uncertainty and training histories.</p></article>
+    <article class="card"><h2>Research exports</h2><p>Download analysis metadata, detailed workbook sheets, and an evaluation report from the dashboard.</p></article>
+  </section>
+  <h2>Research scope</h2>
+  <p>The included V12 benchmark uses synthetic 5× degradation in one lunar region. It does not include independent real 5 m validation. DEM vertical units are unconfirmed, so slope and hazard classes are conditional exploratory proxies.</p>
+  <p class="note"><strong>Scientific caution:</strong> LUNAR-SAFE is a research prototype. Its outputs are not certified landing-safety assessments and should not be used as mission approval.</p>
+  <h2>Run the dashboard</h2>
+  <p>Clone the repository, install dependencies from <code>requirements.txt</code>, and run <code>python -m streamlit run app.py</code>. For a public interactive deployment, connect the repository to Streamlit Community Cloud. GitHub Pages hosts this searchable project page; it does not run the Streamlit application.</p>
+  <footer>Open research prototype · Lunar DEM analysis · Source, data lineage, limitations, and deployment instructions are documented in the repository README.</footer>
+</main></body></html>

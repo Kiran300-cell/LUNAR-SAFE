@@ -1,0 +1,43 @@
+LUNAR-SAFE V12 FINAL AUDIT\n{
+  "run_utc": "2026-10-23T15:51:34.846067+00:00",
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "torch": "2.11.0+cu130",
+  "device": "cuda",
+  "dem_sha256": "023372083f1675ec12bc206e14b2c3af3bf636bdcd33120d592fe00ede23cc56",
+  "expected_models": [
+    "Bicubic",
+    "Bilinear",
+    "CNN_A",
+    "CNN_A_seed143",
+    "CNN_A_seed244",
+    "CNN_A_seed42",
+    "CNN_B",
+    "CNN_B_seed143",
+    "CNN_B_seed244",
+    "CNN_B_seed42"
+  ],
+  "test_patches_per_model": 600,
+  "consistency_check": "PASS for all patches and splits",
+  "all_required_outputs_present": true,
+  "checkpoint_selection_metric": "validation_elevation_L1_for_both_CNN_objectives",
+  "vertical_units_confirmed_metres": false,
+  "cautions": [
+    "Synthetic 5x degradation only; no independent real 5m validation.",
+    "Single Haworth DEM; generalization to other regions is not established.",
+    "Vertical units must be confirmed from source documentation before interpreting slope physically.",
+    "Spatial-block bootstrap depends on block scale; sensitivity analysis is recommended.",
+    "Both CNN objectives use validation elevation L1 for checkpoint selection; optimization objectives are logged separately.",
+    "Slope hazard labels are exploratory and not landing-safety certification."
+  ]
+}\n\nModel summary:\n               relative_elevation_MAE_m  relative_elevation_RMSE_m  slope_MAE_deg  F1_at_10deg  false_safe_rate_at_10deg
+model                                                                                                                   
+Bicubic                        0.034383                   0.043555       1.272993     0.779693                  0.211592
+Bilinear                       0.024904                   0.034099       0.474875     0.841890                  0.187002
+CNN_A                          0.012601                   0.017988       0.346642     0.893728                  0.122967
+CNN_A_seed143                  0.012758                   0.018034       0.359779     0.891841                  0.123405
+CNN_A_seed244                  0.013306                   0.018794       0.367544     0.889528                  0.126721
+CNN_A_seed42                   0.013392                   0.018934       0.370499     0.891498                  0.124591
+CNN_B                          0.012749                   0.018187       0.346747     0.893013                  0.124091
+CNN_B_seed143                  0.013208                   0.018678       0.362795     0.889749                  0.126383
+CNN_B_seed244                  0.013181                   0.018580       0.359699     0.891916                  0.124401
+CNN_B_seed42                   0.013486                   0.019080       0.365884     0.891949                  0.124618
